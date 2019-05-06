@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/coffee-varieties/static/css/main.526eea72.chunk.css",
+    "main.js": "/coffee-varieties/static/js/main.b95e9505.chunk.js",
+    "main.js.map": "/coffee-varieties/static/js/main.b95e9505.chunk.js.map",
+    "runtime~main.js": "/coffee-varieties/static/js/runtime~main.9db50c16.js",
+    "runtime~main.js.map": "/coffee-varieties/static/js/runtime~main.9db50c16.js.map",
+    "static/js/2.93d3ad6e.chunk.js": "/coffee-varieties/static/js/2.93d3ad6e.chunk.js",
+    "static/js/2.93d3ad6e.chunk.js.map": "/coffee-varieties/static/js/2.93d3ad6e.chunk.js.map",
+    "index.html": "/coffee-varieties/index.html",
+    "precache-manifest.2bfb0a0821575d6ff1106c44bb209b4e.js": "/coffee-varieties/precache-manifest.2bfb0a0821575d6ff1106c44bb209b4e.js",
+    "service-worker.js": "/coffee-varieties/service-worker.js",
+    "static/css/main.526eea72.chunk.css.map": "/coffee-varieties/static/css/main.526eea72.chunk.css.map",
+    "static/media/bag.9fdd5b1a.svg": "/coffee-varieties/static/media/bag.9fdd5b1a.svg",
+    "static/media/coffee-bean.eaab2af6.svg": "/coffee-varieties/static/media/coffee-bean.eaab2af6.svg",
+    "static/media/cup.95b7e24e.svg": "/coffee-varieties/static/media/cup.95b7e24e.svg",
+    "static/media/empty-coffee-cup.jpg": "/coffee-varieties/static/media/empty-coffee-cup.cc35250f.jpg"
+  }
+}
