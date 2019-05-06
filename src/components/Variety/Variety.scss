@@ -1,0 +1,59 @@
+.root {
+  position: relative;
+  background: #FFF;
+  padding: 50px;
+  height: 100%;
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 1px 1px 40px #AAA;
+  overflow: auto;
+}
+
+.close {
+  position: absolute;
+  right: 28px;
+  top: 26px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+
+  &:before, &:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: #333;
+  }
+
+  &:before {
+    transform: rotate(45deg);
+  }
+
+  &:after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.propertiesRow {
+  margin-top: 30px;
+}
+
+.propertiesContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.propertyBlock {
+  width: 31%;
+  border-top: 1px #DDD solid;
+  padding-top: 10px;
+}

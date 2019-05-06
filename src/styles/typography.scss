@@ -1,0 +1,7 @@
+@mixin font-rubik {
+  font-family: 'Rubik Mono One', sans-serif;
+}
+
+@mixin title {
+  @include font-rubik;
+}

@@ -1,0 +1,15 @@
+@import '~src/styles/typography.scss';
+
+.root {
+  text-align: center;
+}
+
+.image {
+  width: 400px;
+  margin-bottom: 20px;
+}
+
+.message {
+  @include title;
+  font-size: 20px;
+}

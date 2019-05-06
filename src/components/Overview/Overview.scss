@@ -1,0 +1,30 @@
+.root {
+  height: 100%;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+
+  > li {
+    display: inline-block;
+    margin: 10px 20px 10px 0;
+  }
+}
+
+.varietyPopup {
+  transition: all .3s ease-in-out;
+  transform: scale(1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 50px;
+
+  &:empty {
+    transform: scale(0);
+  }
+}

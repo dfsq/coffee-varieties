@@ -1,0 +1,31 @@
+.chart {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+
+  span {
+    background: #CCC;
+    width: 30%;
+    display: inline-block;
+    height: 8px;
+    border-radius: 4px;
+  }
+}
+
+.resistant {
+  :nth-child(1) {
+    background: #09bc09;
+  }
+}
+
+.tolerant {
+  :nth-child(-n+2) {
+    background: orange;
+  }
+}
+
+.susceptible {
+  span {
+    background: #ff1414;
+  }
+}

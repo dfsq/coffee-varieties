@@ -1,0 +1,8 @@
+.bag {
+  fill: #975322;
+  height: 36px;
+}
+
+.selected ~ .bag {
+  fill: #CCC;
+}

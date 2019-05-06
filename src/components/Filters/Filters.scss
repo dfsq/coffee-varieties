@@ -1,0 +1,25 @@
+.root {
+  margin-top: 25px;
+}
+
+.filterGroup {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.filter {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.filterTitle {
+  text-transform: uppercase;
+}
+
+.checkLabel {
+  cursor: pointer;
+}
+
+.check {
+  margin-right: 5px;
+}

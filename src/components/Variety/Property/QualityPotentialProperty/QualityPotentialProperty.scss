@@ -1,0 +1,8 @@
+.quality {
+  fill: #975322;
+  height: 40px;
+}
+
+.selected ~ .quality {
+  fill: #CCC;
+}
