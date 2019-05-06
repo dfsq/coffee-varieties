@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import CountryFilter from './CountryFilter'
 import QualityFilter from './QualityFilter'
-// import DiseaseResistanceFilter from './DiseaseResistanceFilter'
+import DiseaseResistanceFilter from './DiseaseResistanceFilter'
 
 class Filters extends Component {
   render() {
@@ -10,7 +10,7 @@ class Filters extends Component {
       <div>
         <CountryFilter />
         <QualityFilter />
-        {/*<DiseaseResistanceFilter />*/}
+        <DiseaseResistanceFilter />
       </div>
     );
   }

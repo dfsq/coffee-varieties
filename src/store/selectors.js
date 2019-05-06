@@ -8,13 +8,15 @@ function filterByCountries (selectedCountries) {
   }
 }
 
-function filterByBeanSize (selectedSizes) {
+function filterBy (selectedParameter, getter) {
   return function (item) {
-    if (selectedSizes.length === 0) {
+    if (selectedParameter.length === 0) {
       return item
     }
 
-    return selectedSizes.includes(item.bean_size)
+    const value = typeof getter === 'function' ? getter(item) : item[getter]
+
+    return selectedParameter.includes(value)
   }
 }
 
@@ -26,7 +28,6 @@ export function getSelectedVariety (state, name) {
   return state.varieties.entries.find((v) => v.name === name)
 }
 
-// TODO: should be broken into sub filters
 export function getSelectedVarieties (state) {
   const {
     varieties,
@@ -40,7 +41,12 @@ export function getSelectedVarieties (state) {
   return {
     ...varieties,
     entries: varieties.entries
-      .filter(filterByBeanSize(selected.beanSize))
+      .filter(filterBy(selected.beanSize, 'bean_size'))
+      .filter(filterBy(selected.qualityPotential, 'quality_potential'))
+      .filter(filterBy(selected.yieldPotential, 'yield'))
+      .filter(filterBy(selected.leafRust, (item) => item.disease_resistance[0].leaf_rust))
+      .filter(filterBy(selected.coffeeBerry, (item) => item.disease_resistance[1].coffee_berry_disease))
+      .filter(filterBy(selected.nematodes, (item) => item.disease_resistance[2].nematodes))
       .filter(filterByCountries(selected.countries))
   }
 }

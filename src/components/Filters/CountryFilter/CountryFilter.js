@@ -34,8 +34,9 @@ class CountryFilter extends Component {
           >
             <label className={styles.label}>
               <input
-                type="checkbox"
                 className={styles.check}
+                name="countries"
+                type="checkbox"
                 value={country}
               />
               {country}
@@ -59,5 +60,5 @@ const factory = connect(mapStateToProps, {
 
 export default compose(
   factory,
-  withFilterable('countries')
+  withFilterable,
 )(CountryFilter)

@@ -1,10 +1,9 @@
 import React, { Component } from 'react'
 
-export function withFilterable (name) {
-  return function (BaseComponent) {
+export function withFilterable (BaseComponent) {
     return class WithFilterable extends Component {
       handleChange = (e) => {
-        const { target: { value } } = e
+        const { target: { value, name } } = e
 
         this.props.filterChange({
           name,
@@ -22,4 +21,3 @@ export function withFilterable (name) {
       }
     }
   }
-}

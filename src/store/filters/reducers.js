@@ -12,8 +12,12 @@ const initialState = Object.freeze({
   quality: [],
   selected: {
     countries: [],
-    leafRust: [],
     beanSize: [],
+    qualityPotential: [],
+    yieldPotential: [],
+    leafRust: [],
+    coffeeBerry: [],
+    nematodes: [],
   }
 })
 
