@@ -33,8 +33,6 @@ export function getSelectedVarieties (state) {
     filters: { selected }
   } = state
 
-  console.log('=== selectors::getSelectedVarieties', selected)
-
   if (!varieties.entries) {
     return varieties
   }
@@ -44,6 +42,5 @@ export function getSelectedVarieties (state) {
     entries: varieties.entries
       .filter(filterByBeanSize(selected.beanSize))
       .filter(filterByCountries(selected.countries))
-      // .filter(filterByDiseaseResistance(selected.))
   }
 }
