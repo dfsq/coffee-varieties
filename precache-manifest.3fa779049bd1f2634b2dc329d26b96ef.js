@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "aa50b3dc80fe845e546fac9db7c984ad",
+    "revision": "4c8a2943cdbef4247d319791bd4f26e1",
     "url": "/coffee-varieties/index.html"
   },
   {
-    "revision": "acd3eb67c52c1856b464",
+    "revision": "b94567628632647b4337",
     "url": "/coffee-varieties/static/css/main.526eea72.chunk.css"
   },
   {
-    "revision": "60a81f26b95e76666a9e",
-    "url": "/coffee-varieties/static/js/2.93d3ad6e.chunk.js"
+    "revision": "ae5531be21f383c8ab02",
+    "url": "/coffee-varieties/static/js/2.1c744dcf.chunk.js"
   },
   {
-    "revision": "acd3eb67c52c1856b464",
-    "url": "/coffee-varieties/static/js/main.71256404.chunk.js"
+    "revision": "b94567628632647b4337",
+    "url": "/coffee-varieties/static/js/main.a0048f2d.chunk.js"
   },
   {
     "revision": "c7ab2512be3a2c7ad7dc",

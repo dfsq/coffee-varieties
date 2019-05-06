@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.0/workbox-sw.js");
 
 importScripts(
-  "/coffee-varieties/precache-manifest.2d84a916781f09aa21d90b327cc5481c.js"
+  "/coffee-varieties/precache-manifest.3fa779049bd1f2634b2dc329d26b96ef.js"
 );
 
 self.addEventListener('message', (event) => {
@@ -37,3 +37,5 @@ workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL("/c
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
+
+workbox.routing.registerRoute(/^https:\/\/coffee-varieties.now.sh\/api/, new workbox.strategies.StaleWhileRevalidate({ "fetchOptions":{"mode":"cors"}, plugins: [] }), 'GET');
