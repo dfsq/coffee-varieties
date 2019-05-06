@@ -581,6 +581,15 @@ module.exports = function(webpackEnv) {
             // public/ and not a SPA route
             new RegExp('/[^/]+\\.[^/]+$'),
           ],
+          runtimeCaching: [{
+            urlPattern: new RegExp('^https://coffee-varieties\.now\.sh/api'),
+            handler: 'StaleWhileRevalidate',
+            options: {
+              fetchOptions: {
+                mode: 'cors',
+              },
+            }
+          }],
         }),
       // TypeScript type checking
       useTypeScript &&

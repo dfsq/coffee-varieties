@@ -95,7 +95,7 @@ class Overview extends Component {
   }
 
   renderFilters () {
-    const { entries, loading, error } = this.props.varieties
+    const { loading, error } = this.props.varieties
 
     if (error || loading) {
       return null
