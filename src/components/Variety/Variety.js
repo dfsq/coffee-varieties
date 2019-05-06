@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
 
-import { BeanIcon } from 'src/assets/icons'
 import { getSelectedVariety } from 'src/store/selectors'
 import BeanLoader from 'src/components/BeanLoader'
 

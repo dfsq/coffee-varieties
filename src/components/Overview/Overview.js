@@ -63,7 +63,7 @@ class Overview extends Component {
         <ul className={styles.list}>
           {entries && entries.map(({ name }) => (
             <li key={name}>
-              <Link to={name}>{name}</Link>
+              <Link to={`/variety/${name}`}>{name}</Link>
             </li>
           ))}
         </ul>
@@ -87,7 +87,7 @@ class Overview extends Component {
     return (
       <div className={styles.varietyPopup}>
         <Route
-          path="/:variety"
+          path="/variety/:variety"
           component={Variety}
         />
       </div>

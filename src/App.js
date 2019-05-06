@@ -9,7 +9,7 @@ import store from './store'
 function App () {
   return (
     <Provider store={store}>
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.CV_BASE_PATH}>
         <Layout />
       </BrowserRouter>
     </Provider>
